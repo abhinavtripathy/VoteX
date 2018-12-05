@@ -1,0 +1,94 @@
+body{
+	background:#000;
+	font-family: "Open Sans", sans-serif;
+	height: 100vh;
+	background: url(../img/bg2.jpg) 50% fixed;
+	background-size: cover;
+	color:#fff;
+}
+#welcome h1,#thankyou h1{
+	font-family:'Alfa Slab One', cursive;
+}
+#welcome h2{
+	font-family:'Kranky', cursive;
+}
+#thankyou{
+	font-family:'Quicksand',sans-serif;
+}
+.btn{
+	cursor:pointer;
+}
+#page-title{
+	color:#fff;
+	text-align:center;
+	font-family:'Permanent Marker', cursive;
+	margin:20px;
+}
+.carousel-inner{
+	padding:50px 100px;
+}
+.candidate{
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+.candidate-img{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	margin-bottom:20px;
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.candidate h3{
+	color:#fff;
+	font-family:"Raleway",sans-serif;
+}
+.votex_tap{
+	cursor:pointer;
+}
+.img-container{
+	position: relative;
+	width:240px;
+	height:240px;
+	left:calc(50% - 120px);
+}
+.img-overlay{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.img-container:hover .candidate-img,.votex_selected .candidate-img {
+	opacity: 0.3;
+}
+
+.img-container:hover .img-overlay,.votex_selected .img-overlay {
+	opacity: 1;
+}
+
+.text {
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+.logout{
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	font-size:30px;
+	z-index:999995;
+	color:#fff;
+	transition:0.1s linear all;
+}
+.logout:hover,.logout:focus{
+	color:#ed1c24;
+	text-decoration:none;
+}
